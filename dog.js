@@ -5,7 +5,7 @@ function dog(name) {
 	this.stomach = [];
 }
 
-dog.prototype.eat = function(bone) {
+dog.prototype.eati = function(bone) {
 	this.stomach.push(bone);
 }
 

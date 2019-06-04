@@ -4,15 +4,17 @@ var cat = require('./cat');
 var mouse = require('./mouse');
 
 var Dog = new dog(' ky');
-var Bone = new bone('Heo');
+var Bone = new bone();
 Dog.sayhi();
-Dog.eat(Bone);
-console.log(Dog.eat(Bone));
+Dog.eati(Bone.name);
+console.log(Dog);
 
-var Cat = new cat('Tom', 'white');
-var Mouse = new mouse('jerry', 'orange');
 
-Mouse.sayhy();
+var Tom = new cat('Tom', 'white');
+var Jerry = new mouse('jerry', 'orange');
 
-Cat.eat(Mouse);
-console.log(Cat.eat(Mouse));
+Jerry.sayhy();
+Tom.sayhii();
+
+Tom.eat(Jerry);
+console.log(Tom);

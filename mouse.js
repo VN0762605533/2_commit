@@ -5,7 +5,7 @@ function mouse(name, color) {
 };
 
 mouse.prototype.sayhy = function() {
-	this.name + 'xin chào các bạn!, tôi có màu ' + this.color;
+	console.log(this.name + ' xin chào các bạn!, tôi có màu ' + this.color);
 }
 
 module.exports = mouse;
