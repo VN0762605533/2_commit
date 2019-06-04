@@ -1,6 +1,7 @@
-function bone (name,type) {
+var chalk = require('chalk');
+
+function bone (name) {
 	this.name = name;
-	this.type = type;
 }
 
 module.exports = bone;
