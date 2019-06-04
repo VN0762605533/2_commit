@@ -1,3 +1,5 @@
+var chalk = require('chalk');
+
 function mouse(name, color) {
 	this.name = name; 
 	this.color  = color;
@@ -5,7 +7,7 @@ function mouse(name, color) {
 };
 
 mouse.prototype.sayhy = function() {
-	console.log(this.name + ' xin chào các bạn!, tôi có màu ' + this.color);
+	console.log(this.name + ' xin chào các bạn!, tôi có màu ' + chalk.rgb(255, 127, 80)(this.color));
 }
 
 module.exports = mouse;
