@@ -1,4 +1,4 @@
-function bone (name) {
+function bone (name,type) {
 	this.name = name;
 	this.type = type;
 }
